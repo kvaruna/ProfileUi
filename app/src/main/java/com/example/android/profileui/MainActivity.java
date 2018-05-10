@@ -98,14 +98,14 @@ public class MainActivity extends AppCompatActivity implements AppBarLayout.OnOf
             if (!mIsTheTitleVisible) {
                 startAlphaAnimation(mTitle, ALPHA_ANIMATIONS_DURATION, View.VISIBLE);
                 mIsTheTitleVisible = true;
-                mToolBar.setElevation(0f);
+                mToolBar.setElevation(4f);
             }
         } else {
 
             if (mIsTheTitleVisible) {
                 startAlphaAnimation(mTitle, ALPHA_ANIMATIONS_DURATION, View.INVISIBLE);
                 mIsTheTitleVisible = false;
-                mToolBar.setElevation(0f);
+                mToolBar.setElevation(4f);
             }
         }
     }
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements AppBarLayout.OnOf
             if (mIsTheTitleContainerVisible) {
                 startAlphaAnimation(mTitleContainer, ALPHA_ANIMATIONS_DURATION, View.INVISIBLE);
                 mIsTheTitleContainerVisible = false;
-                mToolBar.setElevation(0f);
+                mToolBar.setElevation(4f);
             }
 
         } else {
